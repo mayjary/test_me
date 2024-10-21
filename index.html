@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="woop.css">
+
+    <title>Table</title>
+    <style>
+       form{
+    font-size: 30px;
+     margin: auto;
+     width: 50%;
+     border: 3px solid green;
+     padding: 10px;
+     text-align: center;
+
+}
+        button:hover{
+            color: rgb(76, 78, 76);
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <label for="Roll number">Enter your roll number</label><br>
+        <input type="number" id="get_roll"><br><br>
+        <button type="button" id="myButton" onclick="dis_table()">Submit</button>
+    </form>
+    <h1>Scanned Barcodes and Fines</h1>
+        <div id="table_contain">
+          <table class="shit" >
+            
+              <tr class="damn">
+                <th>
+                  ID
+                </th>
+                <th>
+                  Name
+                </th>
+                <th >
+                  Timestamp
+                </th>
+                <th >
+                  Fine Amount
+                </th>
+                <th>
+                  Payment Status
+                </th>
+              </tr>
+            
+            <tbody id="data_show">
+              
+                
+              
+            </tbody>
+          </table>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
